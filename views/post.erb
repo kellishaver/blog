@@ -1,0 +1,13 @@
+<section class="post-page section-padding">
+  <% if @post && @body %>
+    <div id="post">
+    <h2 class="post-title"><%= @post["title"] %></h2>
+  	  <%= @body %>
+    </div>
+  <% else %>
+    <h2>Post Not Found...</h2>
+  <% end %>
+</section>
+<section class="section-padding text-center">
+  <a href="/">Home</a>
+</section>

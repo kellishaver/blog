@@ -1,0 +1,26 @@
+<h1 div class="text-center">Blog</h1>
+<section class="section-padding post-index">
+  <% posts(page: @page).each do |post| %>
+    <div class="item well">
+      <h3 class="post-title">
+        <a href="<%= slug(post) %>"><%= post["title"] %></a>
+      <div>
+        <p><%= get_post_short(post["id"]) %></p>
+      </div>
+    </div>
+  <% end %>
+</section>
+<section class="section-padding">
+  <div class="row">
+    <div class="col-md-6 text-left">
+      <% if @page < @total_pages %>
+      	<a href="?page=<%= @page+1 %>">« Older</a>
+      <% end %>
+    </div>
+    <div class="col-md-6 text-right">
+      <% if @page > 1 %>
+        <a href="?page=<%= @page-1 %>">Newer »</a>
+      <% end %>
+    </div>
+  </div>
+</section>

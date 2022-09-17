@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Kelli Shaver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700,800,900|Playfair+Display:400,400i,700,700i,900|Open+Sans:300,400,600,700|Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-custom">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="logo" href="/">Kelli Shaver</a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-icon-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://kellishaver.com">kellishaver.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-tab section-padding main" data-scroll-index="2">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </section>
+    <footer>
+      <div class="main-footer text-center">
+        <div class="social-icon">
+          <a href="https://www.linkedin.com/in/kshaver/"><span><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
+          <a href="https://github.com/kellishaver"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+          <a href="mailto:kelli@kellishaver.com"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+        </div>
+      </div>
+      
+      <div class="sub-footer">
+        <p>Copyright &copy; <%= Date.today.year %> Kelli Shaver</p>
+      </div>
+    </footer>
+    </body>
+</html>
